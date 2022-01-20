@@ -9,4 +9,4 @@ pkg .
 
 ```
 
-And put the output binary file into the `bin_common_XXX` folder of the AnotherCraft client.
+And put the output binary file into the `bin_common_XXX` folder of the AnotherCraft client (rename from `asc_XXX.exe` to just `asc.exe`).
