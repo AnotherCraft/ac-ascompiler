@@ -3,9 +3,9 @@ AssemblyScript compiler is by default a node.js package. That's not much practic
 
 Call
 ```
-npm install
+npm install --production --no-optional
 npm install -g pkg
-pkg .
+pkg . -t win
 
 ```
 
