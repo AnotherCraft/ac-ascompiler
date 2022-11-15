@@ -2,7 +2,7 @@
 
 const asc = module.exports = require("./node_modules/assemblyscript/cli/asc.js");
 
-let stdoutStr = ""
+let stdoutStr = "";
 let stdoutStream = new require('stream').Writable({
     write: function (chunk, encoding, next) {
         stdoutStr = stdoutStr.concat(chunk.toString());
@@ -10,7 +10,7 @@ let stdoutStream = new require('stream').Writable({
     }
 });
 
-let stderrStr = ""
+let stderrStr = "";
 let stderrStream = new require('stream').Writable({
     write: function (chunk, encoding, next) {
         stderrStr = stderrStr.concat(chunk.toString());
