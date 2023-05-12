@@ -9,7 +9,8 @@ npm install -g pkg
 npm install -g @vercel/ncc
 
 npm install --omit=dev --omit=optional
-pkg . -t win
+rollup ./node_modules/assemblyscript/bin/asc.js --format es --dir dist/src
+pkg dist -t win
 ```
 
 And put the output binary file into the `bin_common_XXX` (for example `bin_common_win_x86_64`) folder of the AnotherCraft client (rename from `asc_XXX.exe` to just `asc.exe`).
